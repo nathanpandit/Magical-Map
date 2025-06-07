@@ -24,6 +24,7 @@ public class Actions {
         dist.put(start, 0.0); //sets distance of source to zero
         pq.add(start);
 
+        while (!pq.isEmpty()) {
             Node currentNode = pq.poll();
 
             // exits when goal node is reached
